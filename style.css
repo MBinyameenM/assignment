@@ -1,0 +1,43 @@
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+a { color: gray;  }
+a:hover { color: black; text-decoration: none; }
+
+.navbar, .card-header { background: #007bff !important; color: white !important;  }
+.navbar a { color: white !important;  }
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;
+    max-height: 300px;  
+    margin-bottom: 10px;
+}
+
+.fb-image-profile
+{
+    margin-left: 40%;
+    margin-top: -10%;
+    z-index: 9;
+    width: 20%;
+    max-height: 200px; 
+}
+
+.card { margin-top: 18%;  }
+
+@media (max-width:768px)
+{
+    
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; 
+}
+}
