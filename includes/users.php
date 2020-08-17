@@ -37,6 +37,7 @@
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
+		$password1 = $_POST['password1'];
 
 		$errors = array();
 		foreach( $_POST as $key => $val )
@@ -47,6 +48,10 @@
 			}
 		}
 
+		if($password != $password1)
+		{
+			array_push($errors, '<b> Password </b> doesn\'t match.');
+		}
 		if( !empty($errors) )
 		{
 			$_SESSION['errors'] = $errors;
